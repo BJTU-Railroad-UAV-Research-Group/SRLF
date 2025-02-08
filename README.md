@@ -2,6 +2,6 @@
 
 ------
 
-This is the official PyTorch implementation of **SRLF,** we will be posting the code here soon, stay tuned!!!!
+This is the official PyTorch implementation of **SRLF**, we will be posting the code here soon, stay tuned!!!!
 
 ![framework](assert/framework.jpg)
