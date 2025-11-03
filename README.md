@@ -6,10 +6,12 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"/>
   <img src="https://img.shields.io/github/stars/BJTU-Railroad-UAV-Research-Group/SRLF?style=for-the-badge&logo=github" alt="Stars"/>
 </p>
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=header&text=SRLF%20&fontSize=38&fontAlignY=35&desc=Sparse%20Representation%20Learning%20Framework%20for%20Railroad%20Surrounding%20Potential%20Risk%20Perception%20Using%20UAV%20Imagery&descAlignY=55&descSize=14&fontColor=fff"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=header&text=SRLF%20Framework&fontSize=38&fontAlignY=35&desc=Sparse%20Representation%20Learning%20for%20Railroad%20Risk%20Perception&descAlignY=55&descSize=14&fontColor=fff"/>
 </p>
-------
+
+---
 
 ## 🌟 Overview
 
@@ -51,12 +53,11 @@ cd SRLF
 pip install -r requirements.txt
 ```
 
-Also install [Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html)
+Also install [Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html).
 
 ### 📁 Dataset Structure
 
 **In-Distribution (ID) Dataset (VOC style):**
-
 ```
 dataset-dir/
 ├── JPEGImages
@@ -65,7 +66,6 @@ dataset-dir/
 ```
 
 **Out-of-Distribution (OoD) Dataset (COCO style):**
-
 ```
 dataset-dir/
 └── OoD_folder/
@@ -76,21 +76,20 @@ dataset-dir/
         ├── train2017/
         └── val2017/
 ```
-
 > ⚠️ Both ID and OoD datasets should reside under the same root directory.
 
-------
+---
 
 ## 🚀 Quick Start
 
-```
+```bash
 cd detection
 ```
 
 Before training, update your dataset path in configuration files.
 
-Replace `detectron2/data/build.py` with our customized version from
- `update_detectron2/build.py`.
+Replace `detectron2/data/build.py` with our customized version from  
+`update_detectron2/build.py`.  
 
 If using a different environment (e.g., PyTorch 2.x), manually add:
 
@@ -99,11 +98,11 @@ If using a different environment (e.g., PyTorch 2.x), manually add:
 - `_train_loader_from_config1()`
 - `_test_loader_from_config1()`
 
-------
+---
 
-### 🧩 Training
+## 🧩 Training
 
-```
+```bash
 python train_net_gmm.py \
 --dataset-dir path/to/dataset/dir \
 --config-file VOC-Detection/faster-rcnn/vos_decouple.yaml \
@@ -112,13 +111,12 @@ python train_net_gmm.py \
 --resume
 ```
 
-------
+---
 
-### 🧮 Evaluation
+## 🧮 Evaluation
 
 **Evaluate on ID Validation Set:**
-
-```
+```bash
 python apply_net_test.py \
 --dataset-dir path/to/dataset/dir \
 --test-dataset voc_custom_val \
@@ -130,42 +128,43 @@ python apply_net_test.py \
 --savefigdir path/to/save/visualizations/
 ```
 
-**Evaluate on OoD Validation Set:**
- Uncomment the following line in `apply_net_test.py`:
-
+**Evaluate on OoD Validation Set:**  
+Uncomment the following line in `apply_net_test.py`:
 ```python
 test_data_loader = build_detection_test_loader1(cfg)
 ```
 
-------
+---
 
 ## 📊 Visualization Results
+<p align="center">
+  <img src="assert/11.png" width="45%"/> <img src="assert/12.png" width="45%"/>
+</p>
 
-<p align="center">   <img src="assert/11.png" width="45%"/> <img src="assert/12.png" width="45%"/> </p>
-
-------
+---
 
 ## 🔍 Citation
-
 If you find this code useful, please consider citing:
 
-```
+```bibtex
 @ARTICLE{11218800,
   author={Meng, Fanteng and Qin, Yong and Wu, Yunpeng and Chen, Mingyang and Qiu, Ninghai and Wang, Zhipeng and Yu, Chongchong and Yang, Huaizhi},
   journal={IEEE Transactions on Intelligent Transportation Systems}, 
   title={SRLF: Sparse Representation Learning Framework for Railroad Surrounding Potential Risk Perception Using UAV Imagery}, 
-  year={2025}
+  year={2025},
   pages={1-18},
   doi={10.1109/TITS.2025.3618979}}
 ```
 
-------
+---
 
 ## 🤝 Related Work
 
-- [VOS: Learning What You Don’t Know by Virtual Outlier Synthesis](https://github.com/deeplearning-wisc/vos)
+- [VOS: Learning What You Don’t Know by Virtual Outlier Synthesis](https://github.com/deeplearning-wisc/vos)  
 - [PROB: Probabilistic Objectness for Open World Object Detection](https://github.com/orrzohar/PROB)
 
-------
+---
 
-<p align="center">   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer"/> </p> ```
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer"/>
+</p>
