@@ -1,4 +1,4 @@
-<h1 align="center">⚡ SRLF: Sparse Representation Learning Framework ⚡</h1>
+<h1 align="center">⚡ Sparse Representation Learning Framework ⚡</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Paper-IEEE%20TITS%202025-red?style=for-the-badge&logo=arxiv" alt="Paper"/>
@@ -6,10 +6,10 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"/>
   <img src="https://img.shields.io/github/stars/BJTU-Railroad-UAV-Research-Group/SRLF?style=for-the-badge&logo=github" alt="Stars"/>
 </p>
-
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=header&text=SRLF%20Framework&fontSize=38&fontAlignY=35&desc=Sparse%20Representation%20Learning%20for%20Railroad%20Risk%20Perception&descAlignY=55&descSize=14&fontColor=fff"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=header&text=SRLF&fontSize=38&fontAlignY=35&desc=Sparse%20Representation%20Learning%20Framework%20for%20Railroad%20Risk%20Perception&descAlignY=55&descSize=14&fontColor=fff"/>
 </p>
+
 
 ---
 
