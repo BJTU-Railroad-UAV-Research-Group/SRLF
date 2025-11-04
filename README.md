@@ -33,14 +33,14 @@ SRLF decomposes sparse risk perception into three learning components:
 3. ⚖️ **Triple Similarity Loss (TSL):** Shapes contrastive boundaries between sparse risks and common safety hazards.  
 
 <p align="center">
-  <img src="assert/framework.jpg" width="80%">
+  <img src="assets/framework.jpg" width="80%">
 </p>
 
 ---
 
 ## 🧠 Full Training Pipeline
 <p align="center">
-  <img src="assert/4.png" width="85%">
+  <img src="assets/4.png" width="85%">
 </p>
 
 ---
@@ -138,7 +138,7 @@ test_data_loader = build_detection_test_loader1(cfg)
 
 ## 📊 Visualization Results
 <p align="center">
-  <img src="assert/11.png" width="45%"/> <img src="assert/12.png" width="45%"/>
+  <img src="assets/11.png" width="45%"/> <img src="assets/12.png" width="45%"/>
 </p>
 
 ---
