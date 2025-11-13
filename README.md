@@ -55,6 +55,10 @@ pip install -r requirements.txt
 
 Also install [Detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html).
 
+> ⚠️ We only implemented at torch (1.10.1+cu111), detectron2 (0.6+cu111), our environment is nvcc (v11.3) + NVIDIA 3090 *1.
+
+---
+
 ### 📁 Dataset Structure
 
 **In-Distribution (ID) Dataset (VOC style):**
