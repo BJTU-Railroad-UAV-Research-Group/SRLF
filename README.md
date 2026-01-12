@@ -156,7 +156,10 @@ If you find this code useful, please consider citing:
   journal={IEEE Transactions on Intelligent Transportation Systems}, 
   title={SRLF: Sparse Representation Learning Framework for Railroad Surrounding Potential Risk Perception Using UAV Imagery}, 
   year={2025},
-  pages={1-18},
+  volume={26},
+  number={12},
+  pages={22076-22093},
+  keywords={Hazards;Safety;Autonomous aerial vehicles;Inspection;Rails;Excavation;Uncertainty;Training;Rail transportation;Fasteners;Railroad surroundings;UAV imagery;sparse representation learning;risk perception},
   doi={10.1109/TITS.2025.3618979}}
 ```
 
